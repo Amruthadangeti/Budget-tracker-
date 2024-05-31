@@ -17,9 +17,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .views import index
+from django.urls import path , include, re_path
+from django.conf.urls.static import static 
+from django.conf import  settings 
+from . import views
+
+from .views import index,Goodbudget
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('admin/', admin.site.urls),
     path('',index, name='index'),
+    path('Goodbudget/', Goodbudget, name='Goodbudget'),
 ]
