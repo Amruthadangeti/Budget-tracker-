@@ -25,6 +25,7 @@ from . import views
 from .views import index,Goodbudget,Honeydue,pocketGuard
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('admin/', admin.site.urls),
@@ -32,6 +33,7 @@ urlpatterns = [
     path('Goodbudget/', Goodbudget, name='Goodbudget'),
     path('Honeydue/', Honeydue, name='Honeydue'),
     path('pocketGuard/', pocketGuard, name='pocketGuard'),
+    path('accounts/', include('accounts.urls')),
 
 
     
