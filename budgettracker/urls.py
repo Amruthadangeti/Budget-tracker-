@@ -22,7 +22,7 @@ from django.conf.urls.static import static
 from django.conf import  settings 
 from . import views
 
-from .views import index,Goodbudget
+from .views import index,Goodbudget,Honeydue,pocketGuard
 
 
 urlpatterns = [
@@ -30,4 +30,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',index, name='index'),
     path('Goodbudget/', Goodbudget, name='Goodbudget'),
+    path('Honeydue/', Honeydue, name='Honeydue'),
+    path('pocketGuard/', pocketGuard, name='pocketGuard'),
+
+
+    
 ]
+
+
